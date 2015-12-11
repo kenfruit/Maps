@@ -1,0 +1,36 @@
+/*--------------------------------------
+  Author:      Gabriel Svennerberg
+  Email:       gabriel@svennerberg.com
+  Created:     2010-03-29
+  Description: Stylesheet for chapter 5
+----------------------------------------*/
+html, body {
+  font-family: ComicSans, Arial, Helvetica, sans-serif;
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+  }
+#header{
+height: 150px;
+background: #ccc
+}
+#map {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 550px;
+  height: 660px;
+  border: 1px solid black;
+  }
+#mapindex{
+  position: absolute;
+  top: 150px;
+  right: 0;
+  
+  }
+  
+#footer{
+  padding: 20px;
+}
+
+

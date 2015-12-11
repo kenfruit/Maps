@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Paris Map 2014Big</title>
+    <link rel="stylesheet" href="css/style3B.css" type="text/css" media="all" />
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/MarkerManagerV3.js"></script>
+    <script type="text/javascript" src="js/ParisMapLineLibrary.js"></script>
+    <script type="text/javascript" src="js/ParisMap_WCX.js"></script>
+    <script type="text/javascript" src="js/infobubble.js"></script>
+
+
+</head>
+<body>
+ <h4 id=mapname>Paris Map 2014 - Big <br /></h4>
+ <form action="./">
+ 
+ <table>
+ <tr>
+ <td><input id="cbMetro" type="checkbox" onchange="handleChange(this);">Metro</td> 
+ <td><input id="cbArr" type="checkbox" onchange="handleChange(this);">Arr</td> 
+ <td><input id="cbMarket" type="checkbox" onchange="handleChange(this);">Market</label></td> 
+ <td><input id="cbWalks" type="checkbox" onchange="handleChange(this);">Walks</td> 
+ <td><input id="cbWallace" type="checkbox" onchange="handleChange(this);">Wallace</td> 
+ <td><input id="cbPassage" type="checkbox" onchange="handleChange(this);">Passage</td>
+ <td><input id="cbWifi" type="checkbox" onchange="handleChange(this);">WiFi</td>
+ <td><input id="cbShowAll" type="checkbox" onchange="handleChange(this);">All</td>
+ <td><input id="address" type="text" ></td> 
+ <td><input id="btnSearch" type="button" value="Search"> </td> 
+ </tr>
+ </table>
+</form>
+ <!-- <h2 id=latlngNE>00.00  00.00</h2><br /> -->
+ <!-- <h2 id=latlngSW>00.00  00.00</h2> -->
+<b><h2 id=rowcol>R6C14</h2></b>  
+<table>
+	<tr>
+		<td><div id="map"></div></td>
+		<td> <div id="mapindex"/></td>  
+	</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td>
+					<img src="img/ArrowUp.jpg" id="arrowup" />
+					<img src="img/ArrowLeft.jpg" id="arrowleft" />
+					<img src="img/ArrowRight.jpg" id="arrowright" />
+					<img src="img/ArrowDown.jpg" id="arrowdown" />
+					<img src="img/More.jpg" id="plussign" /></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+					<img src="img/Toilettes_button.jpg" id="toilettes" />
+					<img src="img/metrosign.jpg" id="subwaytoggle" />
+					<img src="img/StarbucksMcDonaldsCombo.jpg" id="starbucks" />
+					<img src="img/Eat.jpg" id="other" /></td>
+					<td>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
