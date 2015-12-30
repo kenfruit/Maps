@@ -31,6 +31,7 @@
             this.btnGetHours = new System.Windows.Forms.Button();
             this.tbInput = new System.Windows.Forms.TextBox();
             this.tbOutput = new System.Windows.Forms.TextBox();
+            this.btnBrooklyn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGetHours
@@ -58,11 +59,22 @@
             this.tbOutput.Size = new System.Drawing.Size(339, 475);
             this.tbOutput.TabIndex = 2;
             // 
+            // btnBrooklyn
+            // 
+            this.btnBrooklyn.Location = new System.Drawing.Point(13, 533);
+            this.btnBrooklyn.Name = "btnBrooklyn";
+            this.btnBrooklyn.Size = new System.Drawing.Size(75, 23);
+            this.btnBrooklyn.TabIndex = 3;
+            this.btnBrooklyn.Text = "Brooklyn";
+            this.btnBrooklyn.UseVisualStyleBackColor = true;
+            this.btnBrooklyn.Click += new System.EventHandler(this.btnBrooklyn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(364, 559);
+            this.Controls.Add(this.btnBrooklyn);
             this.Controls.Add(this.tbOutput);
             this.Controls.Add(this.tbInput);
             this.Controls.Add(this.btnGetHours);
@@ -78,6 +90,7 @@
         private System.Windows.Forms.Button btnGetHours;
         private System.Windows.Forms.TextBox tbInput;
         private System.Windows.Forms.TextBox tbOutput;
+        private System.Windows.Forms.Button btnBrooklyn;
     }
 }
 
