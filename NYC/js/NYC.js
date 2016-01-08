@@ -573,7 +573,9 @@ function arrowClick(direction)
 				{
 					publicSpaceArray.push(new google.maps.Marker({position:pinLatLng, icon:starbucksIcon}));
 				}
-				else if(tempPin.type === "restaurant")
+				else if(tempPin.type === "restaurant" ||
+						tempPin.type === "breakfast" ||
+						tempPin.type === "bestthing")
 				{
 					tempPin.pinNumber = foodCounter.toString();
 					var textColor = "000000";
@@ -585,13 +587,22 @@ function arrowClick(direction)
 							indexTxtFood += "<a href=\"" + tempPin.webpage+ "\" target=\"_blank\">";
 							indexTxtFood += tempPin.name;
 							
-						if(tempPin.note != null)
-						{
-							if(tempPin.note != "")
+							if(tempPin.note != null)
 							{
-								indexTxtFood += " -- " + tempPin.note;
+								//"Best Thing" gets BOLD
+								if(tempPin.type === "bestthing")
+								{
+									indexTxt += "<b>";
+								}
+								if(tempPin.note != "")
+								{
+									indexTxtFood += " -- " + tempPin.note;
+								}
+								if(tempPin.type === "bestthing")
+								{
+									indexTxt += "</b>";
+								}
 							}
-						}							
 							indexTxtFood += "</a>";
 						}
 						else

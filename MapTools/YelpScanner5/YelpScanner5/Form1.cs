@@ -24,7 +24,7 @@ namespace YelpScanner5
             inputText = inputText.Replace("Open now", "");
             inputText = inputText.Replace("Closed now", "");
             inputText = Regex.Replace(inputText, "\t", " ");
-            inputText = Regex.Replace(inputText, "\r\n", "<br/>");
+            inputText = Regex.Replace(inputText, "\r\n", "&lt;br/&gt;");
             inputText = Regex.Replace(inputText, "Monday", "Mon");
             inputText = Regex.Replace(inputText, "Tuesday", "Tue");
             inputText = Regex.Replace(inputText, "Wednesday", "Wed");
@@ -39,7 +39,7 @@ namespace YelpScanner5
 
             if (servesBreakfast)
             {
-                inputText += "\tBreakfast";
+                inputText += "\tBREAKFAST";
             }
 
             txtOutput.Text = inputText;
