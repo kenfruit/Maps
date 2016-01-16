@@ -87,6 +87,12 @@ namespace YelpScanner
 										text += "Closed" + "&lt;br/&gt;";
 										continue;
 									}
+                                    if (0 < node.InnerText.IndexOf("Open 24 hours"))
+                                    {
+                                        text += "Open 24 hours" + "<br/>";
+                                        continue;
+
+                                    }
 
 									int segmentCount = 1;
 									foreach (HtmlNode node4 in node.SelectNodes(".//span"))
@@ -130,7 +136,6 @@ namespace YelpScanner
 							text += s;
 						}
 					}
-
 					text += "\r\n";
 					//Console.WriteLine(text);
 
@@ -150,7 +155,6 @@ namespace YelpScanner
 
 			String formattedDate = "_" + now.ToString("M d yy h mm ss") + ".";
 			formattedDate = formattedDate.Replace(' ', '_');
-
 
 			return outString.Replace(".", formattedDate);
 
@@ -1745,9 +1749,6 @@ namespace YelpScanner
 			//restaurantList.Add("http://www.yelp.com/map/traif-brooklyn");
 			//restaurantList.Add("http://www.yelp.com/search?find_desc=Manousheh+NYC&find_loc=New+York%2C+NY&ns=1");
 			//restaurantList.Add("http://www.yelp.com/search?find_desc=Variety+Coffee+and+Tea&find_loc=New+York%2C+NY&ns=1");
-
 		}
-
-
 	}
 }
